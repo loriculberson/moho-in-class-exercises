@@ -6,16 +6,15 @@ const favColor = (color) => {
         setTimeout(() => {
             getColor = color;
             if (getColor === "red") {
-                resolve(console.log(`color is ${color}`))
+                resolve(console.log(`My favorite color is ${color}.`))
             } else {
-                reject(console.log("That is not the right color"));
+                reject(console.log(`${color} is NOT my favorite color.`));
             }
         },3000);
     })
 };
 
-Promise.all([favColor("red"),favColor("blue"), favColor("purple")])
-    .then((function (fulfilled) {
-        return fulfilled
-    })())
-    .catch(rejected => rejected)
+
+Promise.all([favColor("red"), favColor("blue"), favColor("purple")])
+    .then(fulfilled => fulfilled)
+    .catch(rejected  => rejected)
