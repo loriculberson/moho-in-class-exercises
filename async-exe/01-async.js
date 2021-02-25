@@ -12,6 +12,7 @@ function getFood() {
         foods.forEach(food => {
             menu+= `<div>${food.id}. ${food.name} $${food.cost}</div>`
         })
+        console.log('mmm menu', menu)
         document.body.innerHTML = menu
     }, 1000)
 }
