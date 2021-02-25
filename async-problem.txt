@@ -1,0 +1,14 @@
+PROBLEM: 
+* JavaScript by nature is asynchronous. 
+* It executes independently of the main flow of the program
+
+GOAL:
+* Force functions to complete in the order that we need them to 
+
+HOW: There are 3 ways to make JavaScript seem synchronous
+1. Callbacks (not the best solution)
+2. Promises 
+3. Async/Await
+
+Resources:
+* https://medium.com/codebuddies/getting-to-know-asynchronous-javascript-callbacks-promises-and-async-await-17e0673281ee
